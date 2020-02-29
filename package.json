@@ -1,14 +1,16 @@
 {
-	"name": "the-module",
+	"name": "tedo",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Generate and view the documentation for a module.",
+	"repository": "https://github.com/Richienb/tedo.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
-	"main": "index.js",
+	"main": "cli.js",
+	"bin": {
+		"tedo": "cli.js"
+	},
 	"files": [
-		"index.js",
-		"index.d.ts"
+		"cli.js"
 	],
 	"engines": {
 		"node": ">=10"
@@ -17,11 +19,29 @@
 		"lint": "xo",
 		"test": "yarn lint && ava"
 	},
-	"keywords": [],
-	"dependencies": {},
+	"keywords": [
+		"typedoc",
+		"preview",
+		"js",
+		"lib",
+		"typescript",
+		"javascript",
+		"view",
+		"generate",
+		"temporary",
+		"documentation"
+	],
+	"dependencies": {
+		"chalk": "^3.0.0",
+		"meow": "^6.0.1",
+		"open": "^7.0.2",
+		"tempy": "^0.4.0",
+		"typedoc": "^0.16.11"
+	},
 	"devDependencies": {
 		"ava": "^3.3.0",
 		"eslint-config-richienb": "^0.3.0",
+		"execa": "^4.0.0",
 		"xo": "^0.26.1"
 	},
 	"resolutions": {
