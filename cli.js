@@ -25,7 +25,7 @@ module.exports = (() => {
 	}
 
 	const outPath = tempy.directory()
-	const filePaths = cli.input.map((val) => require.resolve(val))
+	const filePaths = cli.input
 
 	const app = new typedoc.Application()
 
