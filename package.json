@@ -1,6 +1,6 @@
 {
 	"name": "tedo",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Generate and view the documentation for a module.",
 	"repository": "https://github.com/Richienb/tedo.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
